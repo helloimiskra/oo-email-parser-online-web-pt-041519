@@ -11,7 +11,10 @@ class EmailParser
     @emails = emails
     @@emails << self
   end
-  
+
+  def self.parse
+    self.split(', ').to_a
+  end
 
 
 end
