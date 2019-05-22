@@ -18,7 +18,7 @@ class EmailParser
       @emails.split(' ')
     elsif @emails.include?(', ' && ' ')
       @emails.split(', ' && ' ')
-    else 
+    else
       @emails.split
     end
   end
