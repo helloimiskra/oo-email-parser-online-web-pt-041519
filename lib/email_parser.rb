@@ -9,11 +9,11 @@ class EmailParser
 
   def initialize(emails)
     @emails = emails
-    @@emails << self
+    parse = @emails.split(', ')
   end
 
   def parse
-    self.split(', ')
+    parse
   end
 
 
