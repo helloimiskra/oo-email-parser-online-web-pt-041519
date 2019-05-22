@@ -13,15 +13,6 @@ class EmailParser
 
   def parse
     @emails.split(/[,\s]+/).uniq
-    # if @emails.include?(', ')
-    #   @emails.split(', ')
-    # elsif @emails.include?(' ')
-    #   @emails.split(' ')
-    # elsif @emails.include?(', ' && ' ')
-    #   @emails.split(', ' && ' ')
-    # else
-    #   @emails.split
-    # end
   end
 
 
