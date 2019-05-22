@@ -12,15 +12,16 @@ class EmailParser
   end
 
   def parse
-    if @emails.include?(', ')
-      @emails.split(', ')
-    elsif @emails.include?(' ')
-      @emails.split(' ')
-    elsif @emails.include?(', ' && ' ')
-      @emails.split(', ' && ' ')
-    else
-      @emails.split
-    end
+    @emails.split(/[,\s]+/)
+    # if @emails.include?(', ')
+    #   @emails.split(', ')
+    # elsif @emails.include?(' ')
+    #   @emails.split(' ')
+    # elsif @emails.include?(', ' && ' ')
+    #   @emails.split(', ' && ' ')
+    # else
+    #   @emails.split
+    # end
   end
 
 
