@@ -13,7 +13,7 @@ class EmailParser
   end
 
   def self.parse
-    self.split(', ').to_a
+    self.split(', ')
   end
 
 
