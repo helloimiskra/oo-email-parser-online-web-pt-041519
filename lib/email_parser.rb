@@ -12,8 +12,8 @@ class EmailParser
     @@emails << self
   end
 
-  def self.parse
-    @@emails.split(', ')
+  def parse
+    self.split(', ')
   end
 
 
